@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vignan  - About us Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    
+
+    /* ============ VIGNAN SECTION ============ */
+
+    .main-nav {
+      background-color: rgb(220, 246, 245);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 50px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+
+    .nav-links a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: black;
+      font-size: 1em;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: blueviolet;
+      text-decoration: underline;
+    }
+
+    .hero {
+      position: relative;
+      height: 80vh;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .color-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(58,53,63,0.1);
+    }
+
+    .about-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      margin: 50px auto;
+      width: 90%;
+      max-width: fit-content;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(127, 175, 230, 0.1);
+    }
+
+    .about-text {
+      background-color: #9ccaf0;
+      color: rgb(3, 6, 50);
+      flex: 1;
+      padding: 20px;
+    }
+
+    .about-text h1 {
+      font-size: 2.0em;
+      margin: 10px 0 20px;
+      mix-blend-mode: luminosity;
+      animation: fadeInUp 4s ease-out 0.4s forwards; 
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      font-size: 80%;
+      animation: fadeInUp 4s ease-out 0.4s forwards; 
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .about-image {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ab45ef;
+      animation: fadeInUp 4s ease-out 0.4s forwards;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      animation: fadeInUp 4s ease-out 0.4s forwards;
+
+    }
+
+    @media (max-width: 768px) {
+      .nav-links a {
+        margin-left: 15px;
+        font-size: 0.9em;
+      }
+
+      .about-section {
+        flex-direction: column;
+      }
+
+      .about-image, .about-text {
+        width: 100%;
+        size-adjust: inherit;
+      }
+
+      .about-image img {
+        border-radius: 0;
+        position: relative;
+        width: 100%;
+        object-fit: fill;
+      }
+    }
+
+    .highlight-numbers {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px;
+      font-family: sans-serif;
+      color: #007bff;
+    }
+
+    .highlight-numbers div {
+      text-align: center;
+    }
+
+    .highlight-numbers h2 {
+      font-size: 2.8em;
+      margin-bottom: 5px;
+      transition: all 0.5s ease;
+    }
+
+    .highlight-numbers p {
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    .count {
+      animation: fadeIn 5s ease-in;
+      display: inline-block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /excellence section/
+    .excellence-section {
+  display: flex;
+  align-items: stretch; /* Maintain consistent height */
+  width: 100%; /* Make the section take full width */
+  margin: 40px 0; /* Remove horizontal auto margin, keep vertical */
+  padding: 40px;
+  background-color: #f6f4f6; /* Light gray background for the section */
+  border-radius: 8px; /* Optional */
+  flex-direction: row; /* Default: text on the left, image on the right */
+}
+
+.text-content {
+  padding-right: 40px; /* Default right padding */
+  position: relative; /* For pseudo-element positioning */
+  flex: 1; /* Allow text to take up available space */
+}
+
+.text-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px; /* Default border on the right */
+  width: 1px; /* Border width */
+  height: 100%; /* Full height of the text content */
+  background-color: #ccc; /* Example border color */
+}
+
+.text-content h2 {
+  font-size: 2.2em;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.text-content p {
+  line-height: 1.7;
+  color: #0a0808;
+  margin-bottom: 35px;
+}
+
+
+
+
+.image-content {
+  flex: 1;
+  margin-left: 10px; /* Default left margin for the image */
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional */
+}
+
+/* Styling for the second excellence-section (reversed layout) */
+.excellence-section:nth-child(even) {
+  flex-direction: row-reverse; /* Image on the left, text on the right */
+}
+
+.excellence-section:nth-child(even) .text-content {
+  padding-left: 40px; /* Left padding for reversed text */
+  padding-right: 0; /* Remove default right padding */
+}
+
+.excellence-section:nth-child(even) .text-content::after {
+  content: none; /* Remove default right border */
+}
+
+.excellence-section:nth-child(even) .text-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px; /* Border on the left for reversed text */
+  width: 0px;
+  height: 100%;
+  background-color: #9096c8;
+}
+
+.excellence-section:nth-child(even) .image-content {
+  margin-left: 0; /* Remove default left margin */
+  margin-right: 10px; /* Right margin for reversed image */
+}
+
+@media (max-width: 768px) {
+  .excellence-section {
+    flex-direction: column; /* Default stacking on smaller screens */
+    text-align: left;
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .text-content {
+    width: 100%;
+    padding-right: 0; /* Reset right padding for stacked layout */
+    padding-left: 0; /* Reset left padding for stacked layout */
+    margin-bottom: 25px;
+  }
+
+  .text-content::after,
+  .excellence-section:nth-child(2) .text-content::before {
+    display: none; /* Hide borders on smaller screens */
+  }
+
+  .text-content h2 {
+    font-size: 1.8em;
+  }
+
+  .learn-more-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-content {
+    margin-left: 0; /* Reset left margin */
+    margin-right: 0; /* Reset right margin */
+    margin-top: 10px; /* Image below text by default on small screens */
+  }
+
+  /* You might want to adjust the order on small screens for the second section as well */
+  .excellence-section:nth-child(even) {
+    /* You might choose to keep it column or adjust the order differently */
+  }
+
+  .excellence-section:nth-child(even) .image-content {
+    margin-top: 0; /* Adjust margins if reordering on small screens */
+    margin-bottom: 10px; /* Adjust margins if reordering on small screens */
+  }
+}
+    /* ============ LYNN SECTION ============ */
+
+    .lynn-hero {
+      background: url('graduation.jpg') center/cover no-repeat;
+      position: relative;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      color: #fff;
+      text-align: center;
+      max-width: 80%;
+      border-radius: 12px;
+    }
+
+    .overlay h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+
+    }
+
+    .overlay p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #e91e63;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #c2185b;
+    }
+
+
+  .footer-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+  }
+
+  .footer-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 0px;
+    right: 0;
+    background: #e6e5e5;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+  }
+
+  .footer-link:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .follow-us {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(23, 18, 18, 0.1);
+    }
+
+    .follow-us h2 {
+      margin-top: 50px;
+      color: #4b2dba;
+    }
+
+    .social-icons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 90px;
+    }
+
+    .follow-us a {
+      text-decoration: none;
+    }
+
+    /* Custom sizes for each image */
+    .instagram-img {
+      width: 6%;  /* Instagram image size */
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .facebook-img {
+      width: 5%;  /* Facebook image size */
+      height: auto;
+      margin-bottom: 35px;
+      margin-left: 20px;
+    }
+
+    .youtube-img {
+      width: 10%;  /* YouTube image size */
+      height: auto;
+      margin-top: 40px;
+      margin-left: 20px;
+    }
+
+    /* Hover effect */
+    .follow-us a:hover img {
+      transform: scale(1.2); /* Zoom effect when hovering */
+      transition: transform 0.3s ease;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Vignan Navigation -->
+  <div class="main-nav">
+    <div class="logo">
+      <img src="College-Logo.jpg" alt="Vignan Logo">
+    </div>
+    <div class="nav-links">
+      <a href="#">HOME</a>
+      <a href="#">LOGIN</a>
+      <a href="#">REGISTRATION</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">CONTACT US</a>
+    </div>
+  </div>
+
+  <!-- Vignan Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="vignan.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="color-overlay"></div>
+    <div class="hero-text">"Discover our story and<br> join our journey."</div>
+  </section>
+
+  <!-- About Vignan -->
+  <section class="about-section">
+    <div class="about-text">
+      <h4></h4>
+      <h1><strong>WHO WE ARE?</strong></h1>
+      <p>
+        VGNT is an exemplary institution of higher learning with a mission of pursuing excellence in education and research. The 
+        institution, with its diverse and dynamic community of about 2500 students offers a distinctive combination of some of the 
+        finest facilities for MCA, MBA and M.Tech. with 5 different graduate and undergraduate programs CIVIL, MECH, EEE, ECE, CSE, 
+        CSE(AI & ML, CSE(Data Science), IT, EIE accomplished faculty, world-class facilities with hostel set on a sprawling 350 acres 
+        of sylvan surroundings of valleys and watersheds, mango groves and greenery.While students at VGNT immerse themselves in 
+        academics, the college has a lot in store for them outside the classroom. Student life includes participation in sports, 
+        recreational & co-curricular and cultural activities. In short, at VGNT, students will find an academic and social environment
+        where everyone from faculty members to peers helps them shape their future.VGNT is home to aesthetically designed buildings 
+        with its state-of-the-art computer and internet facilities, modern laboratories, workshops, seminar halls, auditoriums and 
+        well-stocked libraries, sports and games fields.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="entrance.jpg" alt="Students Group">
+    </div>
+  </section>
+
+  <!-- Vignan Numbers -->
+  <div class="highlight-numbers" id="highlight-numbers">
+    <div>
+      <h2><span id="count1" class="count">0</span>+</h2>
+      <p>years of</p><p>glorious</p><p style="font-size: 1.5em;">legacy</p>
+    </div>
+    <div>
+      <h2><span id="count2" class="count">0</span>+</h2>
+      <p>companies</p>
+    </div>
+    <div>
+      <h2><span id="count3" class="count">0</span>+</h2>
+      <p>placements</p>
+    </div>
+    <div>
+      <h2><span id="count4" class="count">0</span></h2>
+      <p>acres of</p><p>campus</p>
+    </div>
+  </div>
+
+  <!-- Lynn Section -->
+  <section class="lynn-hero">
+    <div class="overlay">
+      <h1>"The future belongs to those who believe in the beauty of their dreams."</h1>
+      <p>Vignan is proud to be a place where passion meets purpose. Discover why our team loves being part of the Vignan family — and explore exciting career opportunities with us."</p>
+    </div>
+  </section>
+  <br>
+
+
+  <div class="excellence-section">
+    <div class="text-content">
+      <h2>Excellence in education across disciplines</h2>
+      <p>Vignan provides students the opportunity to engage with big ideas, to cross conceptual and disciplinary boundaries, and to become global citizens who embrace diversity of thought and experience. We offer broad and deep academic programs across multiple fields, including the arts and humanities, natural and social sciences, engineering, sustainability, medicine, law, education, and business. The university's scholarly excellence and culture of innovation uniquely position it to attract the best faculty in the world, who offer students the knowledge and tools to discover and embrace new ideas, and to prepare for successful careers and lives of service. The need for strong ethical principles to achieve a common good is embedded across our educational offerings.</p>
+    </div>
+    <div class="image-content">
+      <img src="expo.jpg" alt="Students working on a project">
+    </div>
+  </div>
+
+  <div class="excellence-section">
+    <div class="text-content">
+      <h2>Empowering Futures Through Innovation and Celebration</h2>
+      <p>Our college stands as a beacon of progress, consistently championing causes that shape the world of technology and beyond. With a deep-rooted commitment to fostering knowledge and awareness, we have transformed our campus into a dynamic space for discovery, dialogue, and development. Through meticulously planned gatherings, our institution brings together brilliant minds, industry leaders, and passionate students, igniting discussions that matter.We believe that knowledge shared is knowledge multiplied.</p>
+    </div>
+    <div class="image-content">
+      <img src="expvgnt.jpg" alt="Students working on a project">
+    </div>
+  </div>
+
+  <div class="follow-us">
+    <h2>Stay connected to campus on    </h2>
+    <div class=""social-icons">
+    <a href="https://www.instagram.com/vignan_vgnt/" target="_blank">
+      <img src="insta.png" alt="Instagram" class="instagram-img">
+    </a>
+    <a href="https://www.facebook.com/vignanits/" target="_blank">
+      <img src="facebook.png" alt="Facebook" class="facebook-img">
+    </a>
+    <a href="https://youtu.be/U6Jc09Ocrpc?si=r4JKXq0QG-zeqTKS" target="_blank">
+      <img src="yt.png" alt="YouTube" class="youtube-img">
+    </a>
+    </div>
+  </div>
+
+  <!-- Vignan Footer -->
+  <footer style="background-color: #1e1e1e; color: #f0f0f0; padding: 40px 5%;">
+    <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
+        <div style="flex: 1; margin-right: 20px;">
+            <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                <img src="College-Logo.jpg" alt="Vignan Logo" style="height: 60px; margin-right: 15px;">
+            </div>
+            <p style="font-size: 0.9em; color: #999; margin-bottom: 10px;">Deshmukhi(V), Pochampally(M), Yadadri-Bhuvanagiri District, Telangana, 508284.</p>
+            <p style="font-size: 0.9em; color: #999; margin-bottom: 5px;">Tel: 08685-225128, 9866399775/ 361</p>
+            <p style="font-size: 0.9em; color: #999; margin-bottom: 5px;">Email: principal.vgnt33@gmail.com, principal.vits@gmail.com, principal.vgnt@vignanits.ac.in</p>
+        </div>
+        <div style="flex: 1; margin-right: 20px;">
+            <h4 style="color: #e91e63; margin-bottom: 15px;">More Links</h4>
+            <ul style="list-style: none; padding: 0; font-size: 0.9em;">
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/thermal-engineering-lab/student-start-upscareers/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Student Start-Ups & Careers</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/vgnt-in-media/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">VGNT In Media</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/industrial-consultancy-bureau/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Industrial Consultancy Bureau</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/professional-bodies/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Professional Bodies</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/institutional-values-and-best-practices/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Institutional Values and Best Practices</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/edc-centre/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">EDC Centre</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/news-letters/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">News Letters</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/news-letters/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">ARIIA</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/alumni/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Alumni</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/wp-content/uploads/2022/05/Information-Technology-Services.pdf" class="footer-link" style="color: #f0f0f0; text-decoration: none;">IT Policy</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/wp-content/uploads/2022/05/Maintenance-policy.pdf" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Maintenance Policy</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/blog/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Blog</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/nirf_f/nirf2025/NIRF2025.pdf" class="footer-link" style="color: #f0f0f0; text-decoration: none;">NIRF-2025</a></li>
+            </ul>
+        </div>
+        <div style="flex: 1; margin-right: 20px;">
+            <h4 style="color: #e91e63; margin-bottom: 15px;">Campus Life</h4>
+            <ul style="list-style: none; padding: 0; font-size: 0.9em;">
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/mandatory-disclosures/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Mandatory Disclosures</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/college-level-committees/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">College Level Committees</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/college-level-events/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">College Level Events</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/strategic-plans/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Strategic Plans</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/green-initiatives/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Green Initiatives</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/right-to-information-rti/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Right to Information (RTI)</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/vits-nss/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">VITS-NSS</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/achievements/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Achievements</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/online-grievance/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Online Grievance</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/skills-enhancement/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Skills Enhancement</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/innovation-incubation-center/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Innovation & Incubation Center</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="footer-link" style="color: #f0f0f0; text-decoration: none;">I & E Activities</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Student Registration Form</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="footer-link" style="color: #f0f0f0; text-decoration: none;">Route Map</a></li>
+            </ul>
+        </div>
+        <div style="flex: 1;">
+            <h4 style="color: #e91e63; margin-bottom: 15px;">Login Links</h4>
+            <ul style="list-style: none; padding: 0; font-size: 0.9em;">
+                <li style="margin-bottom: 8px;"><a href="https://www.vignanits.ac.in/Mentor/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">→ Student counseling Portal</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.in/obe/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">→ OBE-Portal</a></li>
+                <li style="margin-bottom: 8px;"><a href="#" class="footer-link" style="color: #f0f0f0; text-decoration: none;">→ V-Learn (Moodle)</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://vignanits.ac.in/vims/index.php" class="footer-link" style="color: #f0f0f0; text-decoration: none;">→ VIMS-Login</a></li>
+                <li style="margin-bottom: 8px;"><a href="https://mail.google.com/mail/u/0/" class="footer-link" style="color: #f0f0f0; text-decoration: none;">→ Webmail Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="max-width: 1200px; margin: 20px auto 0; text-align: center; font-size: 0.8em; color: #777;">
+        <p>&copy; 2024 Vignan Institute of Technology and Science. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    function animateCount(id, target, duration) {
+      const el = document.getElementById(id);
+      let start = 0;
+      const increment = target / (duration / 16); // ~60fps
+  
+      const counter = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+          start = target;
+          clearInterval(counter);
+        }
+        el.textContent = Math.floor(start);
+      }, 16); // Roughly every frame (~60fps)
+    }
+
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5     };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCount("count1", 25, 2000);   // 25+ years
+          animateCount("count2", 70, 2000);  
+          animateCount("count3", 1500, 2000);           animateCount("count4", 360, 2000);   
+          observer.unobserve(entry.target); 
+        }
+      });
+    }, options);
+
+    observer.observe(document.getElementById('highlight-numbers'));
+  </script>
+</body>
+</html>
